@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Fahim Bank</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="web.js"></script>
+</head>
+<body>
+  <section id="login-area">
+    <h1 class="text-center">Welcome To AMF Bank</h1>
+   <div class="submit-area">
+    <h4>Login</h4>
+    <input type="email" name="" id="" class="form-control" placeholder="Email">
+    <br>
+    <input type="password" name="" id="" class="form-control" placeholder="Password">
+    <br>
+    <button id="login" class="btn btn-success">Enter</button>    
+   </div> 
+  </section>
+  <section id="transaction-area">
+    <div class="row col-md-4">
+      <h5></h5>
+      <h2></h2>
+    </div>
+    <div class="row col-md-4">
+      <h5></h5>
+      <h2></h2>
+    </div>
+    <div class="row col-md-4">
+      <h5></h5>
+      <h2></h2>
+    </div>
+  </section>
+  <script>
+    const loginBtn = document.getElementById("login");
+loginBtn.addEventListener("click", function(){
+  const loginArea = document.getElementById("login-area");
+  loginArea.style.display = "none";
+  const transactionArea =document.getElementById('transaction-area')
+  transactionArea.style.display = 'block';
+})
+  </script>
+</body>
+</html>
